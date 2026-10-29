@@ -1,0 +1,5 @@
+body { font-family: "Times New Roman"; color: #bbbbbb; }
+input { border: none; border-bottom: 1px solid #eee; }
+button { font-size: 10px; background: #ddd; color: #fff; border: none; }
+*:focus { outline: none; }
+.x { color: red; font-size: 22px; }
