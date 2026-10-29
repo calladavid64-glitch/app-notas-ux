@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
- <title>app</title>
- <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
- <h1>NOTAS</h1>
- <h1>Agregar</h1>
- <input id="texto" placeholder="nota">
- <button id="agregar">ok</button>
- <div id="lista"></div>
- <script src="app.js"></script>
+  <main class="tarjeta">
+    <h1>Mis notas</h1>
+    <p class="ayuda">Escribe tu nota. El botón se activa cuando hay texto.</p>
+
+    <form id="formulario">
+      <label for="texto">Nueva nota</label>
+      <input id="texto" type="text" maxlength="100" autocomplete="off">
+      <button type="submit" id="agregar" class="boton-principal" disabled>Agregar nota</button>
+    </form>
+
+    <p id="mensaje" class="mensaje" role="status"></p>
+
+    <h2>Tus notas</h2>
+    <p id="vacio" class="ayuda">Aún no tienes notas.</p>
+    <ul id="lista"></ul>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
